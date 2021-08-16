@@ -9,4 +9,3 @@ merkletree: sha256.o
 clean:
 	-rm -f *.o
 	-rm -f $(execs)
-
