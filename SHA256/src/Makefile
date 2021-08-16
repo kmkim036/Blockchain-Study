@@ -1,7 +1,7 @@
 execs := sha256
 
 # build
-merkletree: sha256.o
+sha256: sha256.o
 	gcc -o sha256 sha256.o
 
 # clean
