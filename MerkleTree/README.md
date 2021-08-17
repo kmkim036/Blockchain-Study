@@ -29,7 +29,7 @@ Print_MerkleHash_Postorder(root);
 
 
 # Merkle Tree Structure
-## Example Merkle Tree Structure Diagram for Depth 3
+- Example Merkle Tree Structure Diagram for Depth 3
 ```mermaid
 graph TD
   A["Merkle Root<br>Hash(H12 + H13) = Final Hash Value"]
