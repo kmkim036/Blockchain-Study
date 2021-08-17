@@ -27,7 +27,7 @@ uint32_t* Make_W(uint8_t* buf)
     msg[i] = 0x80;
     msg[63] = i * 8;
 
-    static uint32_t SHA256_W[64];
+    uint32_t* SHA256_W = malloc(sizeof(uint32_t) * 64);
     for (i = 0; i < 16; i++)
         SHA256_W[i] = msg[i * 4] << 24 | msg[i * 4 + 1] << 16 | msg[i * 4 + 2] << 8 | msg[i * 4 + 3];
     for (i = 16; i < 64; i++)
@@ -63,7 +63,7 @@ uint32_t* Get_Hash(uint8_t* buf)
     for (i = 0; i < 64; i++)
         Round_Func(SHA256_H_TEMP, SHA256_W[i], i);
 
-    static uint32_t HASH_VALUE[8] = { 0 };
+    uint32_t* HASH_VALUE = malloc(sizeof(uint32_t) * 8);
     for (i = 0; i < 8; i++)
         HASH_VALUE[i] = SHA256_H_TEMP[i] + SHA256_H[i];
 
