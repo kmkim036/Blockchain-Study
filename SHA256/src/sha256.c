@@ -17,7 +17,7 @@ const uint32_t SHA256_H[8] = {
 };
 
 // pre-process of input message
-uint32_t* Make_W(char* buf)
+uint32_t* Make_W(uint8_t* buf)
 {
     int i;
 
@@ -50,7 +50,7 @@ void Round_Func(uint32_t* H, uint32_t W, int i)
     H[0] = T1 + T2;
 }
 
-uint32_t* Get_Hash(char* buf)
+uint32_t* Get_Hash(uint8_t* buf)
 {
     int i;
 

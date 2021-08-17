@@ -14,6 +14,6 @@
 #define CH(A, B, C) ((A & B) | ((~A) & C))
 #define MAJ(A, B, C) ((A & B) ^ (A & C) ^ (B & C))
 
-uint32_t* Make_W(char* buf);
+uint32_t* Make_W(uint8_t* buf);
 void Round_Func(uint32_t* H, uint32_t W, int i);
-uint32_t* Get_Hash(char* buf);
+uint32_t* Get_Hash(uint8_t* buf);
