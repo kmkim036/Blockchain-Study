@@ -28,7 +28,9 @@ Print_MerkleHash_Postorder(root);
 
 
 
-# Merkle Tree Structure
+# Merkle Tree Structure Diagram
+**Online Github Page doesn't support mermaid graph viewer<br>So if want to see the Tree Diagram below, use markdown viewer such as Typora**  
+
 - Example Merkle Tree Structure Diagram for Depth 3
 ```mermaid
 graph TD
