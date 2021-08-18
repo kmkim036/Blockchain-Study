@@ -16,7 +16,7 @@ make
 ``` C
 #include "sha256.h"
 
-char *InputWord = "Example";
+uint8_t *InputWord = "Example";
 uint32_t *HashOutput = Get_Hash(InputWord);
 ```
 
