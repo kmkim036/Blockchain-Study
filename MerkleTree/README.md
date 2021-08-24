@@ -17,7 +17,15 @@ make
 #include "merkletree.h"
 
 char *InputWord[] = {"Example1", "Example2", "Example3"};
+
 Init_MerkleTree(InputWord);
+
+printf("\nPrint Edge Hash Value by Post Order\n");
+Print_MerkleHash_Postorder(root);
+
+Get_MerkleHash(root);
+
+printf("\nPrint Merkle Tree Hash Value by Post Order\n");
 Print_MerkleHash_Postorder(root);
 ```
 
