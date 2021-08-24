@@ -13,8 +13,7 @@ typedef struct _merkletree {
 
 node* root;
 
-uint32_t* Get_Edge_MerkleHash(uint8_t* buf);
-uint32_t* Get_MerkleHash(uint32_t* h1, uint32_t* h2);
+void Get_MerkleHash(node* t);
 
 void Init_MerkleTree(char* data[]);
 void Create_Node(node* t, int level, int depth);
