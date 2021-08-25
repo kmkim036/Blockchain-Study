@@ -17,7 +17,7 @@ make
 #include "sha256.h"
 
 uint8_t *InputWord = "Example";
-uint32_t *HashOutput = Get_Hash(InputWord);
+uint32_t *HashOutput = Get_SHA256Hash(InputWord);
 ```
 
 

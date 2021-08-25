@@ -50,7 +50,7 @@ void Round_Func(uint32_t* H, uint32_t W, int i)
     H[0] = T1 + T2;
 }
 
-uint32_t* Get_Hash(uint8_t* buf)
+uint32_t* Get_SHA256Hash(uint8_t* buf)
 {
     int i;
 

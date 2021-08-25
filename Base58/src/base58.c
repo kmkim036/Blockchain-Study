@@ -36,7 +36,7 @@ int Get_Value(char input)
         return -1;
 }
 
-void reverseString(char* str)
+void Reverse_String(char* str)
 {
     size_t size = strlen(str);
     char temp;
@@ -98,6 +98,6 @@ char* Decode_Base58(char* input)
         sum = sum >> 8;
     }
 
-    reverseString(ret);
+    Reverse_String(ret);
     return ret;
 }

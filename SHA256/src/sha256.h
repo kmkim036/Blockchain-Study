@@ -17,4 +17,4 @@
 
 uint32_t* Make_W(uint8_t* buf);
 void Round_Func(uint32_t* H, uint32_t W, int i);
-uint32_t* Get_Hash(uint8_t* buf);
+uint32_t* Get_SHA256Hash(uint8_t* buf);

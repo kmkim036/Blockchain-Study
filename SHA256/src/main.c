@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
         return -1;
     }
 
-    uint32_t* SHA256HashOutput = Get_Hash(argv[1]);
+    uint32_t* SHA256HashOutput = Get_SHA256Hash(argv[1]);
 
     printf("0x");
     for (int i = 0; i < 8; i++)

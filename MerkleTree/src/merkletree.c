@@ -51,7 +51,7 @@ void Create_Node(node* t, int level, int depth)
 void Insert_Edge_MerkleHash(node* t, char* buf)
 {
     if (t->left == NULL && t->right == NULL)
-        t->hash = Get_Hash(buf); // get sha256 hash result using a function "Get_Hash" in sha256.c
+        t->hash = Get_SHA256Hash(buf); // get sha256 hash result using a function "Get_SHA256Hash" in sha256.c
     else {
         if (t->left->hash == NULL && t->right->hash == NULL)
             Insert_Edge_MerkleHash(t->left, buf);
@@ -95,6 +95,6 @@ void Get_MerkleHash(node* t)
         for (int i = 0; i < 8; i++)
             buf[i] = h1[i] + h2[i];
 
-        t->hash = Get_Hash(buf);
+        t->hash = Get_SHA256Hash(buf);
     }
 }

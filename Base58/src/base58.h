@@ -5,7 +5,7 @@
 char Get_Char(int input);
 int Get_Value(char input);
 
-void reverseString(char* str);
+void Reverse_String(char* str);
 
 char* Encode_Base58(char* input);
 char* Decode_Base58(char* input);
