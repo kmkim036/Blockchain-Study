@@ -18,14 +18,16 @@ make
 
 char *InputWord[] = {"Example1", "Example2", "Example3"};
 
+// initialize tree
 Init_MerkleTree(InputWord);
 
-printf("\nPrint Edge Hash Value by Post Order\n");
+// print tree before calculate merkle hash by post order
 Print_MerkleHash_Postorder(root);
 
+// get merkle hash
 Get_MerkleHash(root);
 
-printf("\nPrint Merkle Tree Hash Value by Post Order\n");
+// print tree after calculate merkle hash by post order
 Print_MerkleHash_Postorder(root);
 ```
 
